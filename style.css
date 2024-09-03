@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(35, 34, 83);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+/* main page css  */
+#hero{
+    height: 90vh;
+    width: 99%;
+    margin: auto;
+    background: url(./Assets/back-view-woman-doing-yoga-outdoors.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+/* css for header  */
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 15px;
+    padding-block: 5px;
+    align-items: center;
+    margin-bottom: 2%;
+    background-color: rgba(0, 0, 0, 0.116);
+    border-radius: 20px;
+}
+#logIn{
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+}
+#logIn:hover{
+    background-color: rgb(35, 34, 83); 
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+#name{
+    font-size: larger;
+    font-weight: 800;
+}
+#name:hover{
+    color: rgb(179, 14, 14);
+    transition: 0.4s;
+}
+#profileLogo{
+    display: none;
+}
+
+
+/* cvss for front page  */
+
+#details{
+    display: flex;
+    gap: 10px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    width: 75%;
+    gap: 100px;
+}
+#left_text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 80%;
+}
+#MainHeading{
+    font-size:50px;
+    font-weight: 700;
+}
+#subHeading{
+    font-size:30px;
+    font-weight: 800;
+}
+#minHeading{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#images{
+    display: flex;
+    gap: 50px;
+}
+#images img{
+    width: 200px;
+    height: 110px;
+    border-radius: 20px;
+}
+.leftLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    background-color: rgba(128, 128, 128, 0.322);
+    padding: 10px;
+    border-radius: 20px;
+}
+.leftLinks:hover{
+    scale: 1.1 ;
+    transition: 0.5s;
+}
+
+.right{
+    width: 20%;
+    /* height: 69vh; */
+    /* background-color: rgba(184, 204, 214, 0.26); */
+    border-radius: 20px;
+}
+#rightItems{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    font-size: larger;
+    font-weight: 800;
+    list-style: none;
+}
+.right li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    height: 60px;
+    border-radius: 10px;
+}
+.right li:hover{
+    background-color: rgb(35, 34, 83); 
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
+/* footer */
+
+#footer{
+    height: 8.8vh;
+    color: white;
+    width: 99%;
+    margin: auto;
+    border: 2px dashed rgb(35, 34, 83);
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 15px;
+    align-items: center;
+}
+
+#leftFooter{
+    display: flex;
+    gap: 10px;
+}
+
+#quoteChange{
+    font-size: 30px; 
+    font-family: Martel, serif;
+}
+
+
+/* responsiveness using media */
+
+
+@media screen and (max-width:900px){
+    #header{
+        border-radius: 0;
+    }
+    #profileLogo{
+        display: block;
+    }
+    #name{
+        display: none;
+    }
+    #hero{
+        height: auto;
+        width: auto;
+    }
+
+    #images{
+        flex-direction: column;
+    }
+    #details{
+        flex-direction: column;
+        width: auto;
+    }
+
+    .left{
+        width: auto;
+    }
+
+    .right{
+        width: auto;
+    }
+    #rightItems li{
+        background-color: rgba(35, 34, 83, 0.555); 
+        color: white;
+    }
+    #quoteChange{
+        font-size: 18px;
+    }
+    #ActiveUsers{
+        display: none;
+    }
+    #leftFooter img{
+        height: 20px;
+    }
+}

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(35, 34, 83);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 1%;
+    background:url(../Assets/loginPage.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width: 25%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: rgba(255, 255, 255, 0.623);
+    border: 2px solid black;
+    margin-top: 10%;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#userName , #password , #email{
+    height: 50px;
+    width: 300px;
+    padding: 5px;
+}
+button{
+    height: 40px;
+    width: 150px;
+    font-size: large;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: rgb(35, 34, 83); 
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
