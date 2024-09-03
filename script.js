@@ -1,7 +1,7 @@
 let name = document.getElementById('name');
 let logInBtn = document.getElementById('logIn');
 let quoteChange = document.getElementById('quoteChange');
-
+let firstLetter = document.getElementById('firstLetter');
 
 
 
@@ -18,6 +18,7 @@ function getRandomQuote(){
 if(localStorage.getItem('userName')){
     logInBtn.style.display="none";
     name.textContent =`Hi ${localStorage.getItem('userName').toLocaleUpperCase()} 👋`;
+    firstLetter.textContent = `${localStorage.getItem('userName').charAt(0).toLocaleUpperCase()}`;
 }
 
 

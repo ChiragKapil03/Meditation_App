@@ -33,8 +33,8 @@ body{
 }
 
 #userName , #password{
-    height: 50px;
-    width: 300px;
+    height: 13%;
+    width: 80%;
     padding: 5px;
 }
 
@@ -53,4 +53,20 @@ button:hover{
     color: white;
     transition: 0.4s;
     cursor: pointer;
+}
+
+
+/* Responsiveness of login page  */
+
+@media screen and (max-width:900px){
+    .container{
+        width: 60%;
+        height: 58%;
+    }
+
+    #userName , #password{
+        height: 8%;
+        width: 80%;
+        padding: 5px;
+    }
 }

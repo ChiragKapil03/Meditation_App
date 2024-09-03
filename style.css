@@ -30,6 +30,10 @@
     background-color: rgba(0, 0, 0, 0.116);
     border-radius: 20px;
 }
+#buttons{
+    display: flex;
+    align-items:center ;
+}
 #logIn{
     height: 30px;
     width: 80px;
@@ -52,7 +56,9 @@
 #profileLogo{
     display: none;
 }
-
+#firstLetter{
+    display: none;
+}
 
 /* cvss for front page  */
 
@@ -185,6 +191,16 @@
     }
     #name{
         display: none;
+    }
+    #firstLetter{
+        display: block;
+        font-size: larger;
+        font-weight: 800;
+        color: rgb(156, 10, 10);
+        background-color: rgba(128, 128, 128, 0.253);
+        width: 20px;
+        border-radius: 10px;
+        padding: 3px;
     }
     #hero{
         height: auto;
