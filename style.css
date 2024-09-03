@@ -180,6 +180,9 @@
     #profileLogo{
         display: block;
     }
+    #logIn{
+        display: none;
+    }
     #name{
         display: none;
     }
@@ -199,7 +202,9 @@
     .left{
         width: auto;
     }
-
+    #left_text{
+        width: auto;
+    }
     .right{
         width: auto;
     }
