@@ -2,19 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: rgb(35, 34, 83);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(35, 34, 83);
     text-decoration: none;
 }
 
 /* css for header  */
+body{
+    background: linear-gradient(70deg, white,rgb(220, 230, 241),whitesmoke);
+    /* min-height: 100vh; */
+}
+
+
 #header{
     display: flex;
     justify-content: space-between;
+    color: rgb(35, 34, 83);
     padding-inline: 15px;
     padding-block: 5px;
     align-items: center;
-    margin-bottom: 2%;
+    margin-bottom: 0.5%;
     background-color: rgba(0, 0, 0, 0.116);
     border-radius: 20px;
 }
@@ -22,31 +29,111 @@
     display: flex;
     align-items:center ;
 }
+
 #logIn{
     height: 30px;
     width: 80px;
     border-radius: 5px;
 }
+
 #logIn:hover{
     background-color: rgb(35, 34, 83); 
     color: white;
     transition: 0.4s;
     cursor: pointer;
 }
+
 #name{
     font-size: larger;
     font-weight: 800;
+    color: rgb(35, 34, 83);
 }
+
 #name:hover{
     color: rgb(179, 14, 14);
     transition: 0.4s;
 }
+
 #profileLogo{
     display: none;
 }
+
 #firstLetter{
     display: none;
 }
+
+#loader{
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+/* main css  */
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    min-height:85vh ;
+    padding: 20px;
+}
+
+#deepBreathing{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+    min-height: 30vh;
+    border: 2px solid;
+    background-color: rgba(179, 216, 205, 0.932);
+    border-radius: 10px;
+}
+
+#details1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 600;
+}
+#details1 p{
+    color: rgb(7, 73, 12);
+}
+
+#tech478{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+    min-height: 30vh;
+    border: 2px solid;
+    background-color: rgba(179, 216, 205, 0.932);
+    border-radius: 10px;
+}
+
+#details2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 600;
+}
+#details2 p{
+    color: rgb(7, 73, 12);
+}
+
+#dbBegin , #Begin478{
+    width: 10%;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
 
 
 @media screen and (max-width:900px){
@@ -71,5 +158,21 @@
         width: 20px;
         border-radius: 10px;
         padding: 3px;
+    }
+    #loader{
+        height: 10%;
+        width: 25%;
+        left: 40%;
+    }
+
+    #dbBegin , #Begin478{
+        width: 100px;
+        margin-top: 25px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    #deepBreathing , #tech478{
+        width: 70%;
     }
 }
