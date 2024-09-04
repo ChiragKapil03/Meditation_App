@@ -7,8 +7,9 @@
     text-decoration: none;
 }
 /* main page css  */
+
 #hero{
-    height: 90vh;
+    min-height: 90vh;
     width: 99%;
     margin: auto;
     background: url(./Assets/back-view-woman-doing-yoga-outdoors.jpg);

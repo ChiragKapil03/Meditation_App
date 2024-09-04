@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(35, 34, 83);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+/* css for header  */
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 15px;
+    padding-block: 5px;
+    align-items: center;
+    margin-bottom: 2%;
+    background-color: rgba(0, 0, 0, 0.116);
+    border-radius: 20px;
+}
+#buttons{
+    display: flex;
+    align-items:center ;
+}
+#logIn{
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+}
+#logIn:hover{
+    background-color: rgb(35, 34, 83); 
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+#name{
+    font-size: larger;
+    font-weight: 800;
+}
+#name:hover{
+    color: rgb(179, 14, 14);
+    transition: 0.4s;
+}
+#profileLogo{
+    display: none;
+}
+#firstLetter{
+    display: none;
+}
+
+
+@media screen and (max-width:900px){
+    #header{
+        border-radius: 0;
+    }
+    #profileLogo{
+        display: block;
+    }
+    #logIn{
+        display: none;
+    }
+    #name{
+        display: none;
+    }
+    #firstLetter{
+        display: block;
+        font-size: larger;
+        font-weight: 800;
+        color: rgb(156, 10, 10);
+        background-color: rgba(128, 128, 128, 0.253);
+        width: 20px;
+        border-radius: 10px;
+        padding: 3px;
+    }
+}
