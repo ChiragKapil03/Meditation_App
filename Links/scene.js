@@ -27,21 +27,30 @@ const nextButton = document.getElementById('next');
 const prevPreview = document.getElementById('prev-preview');
 const nextPreview = document.getElementById('next-preview');
 
-// Function to update the scene based on the current scene index
+// Function to update scenes and handle video play/pause
 function updateScene() {
+    // Loop through each scene
     scenes.forEach((scene, index) => {
-        scene.style.display = (index === currentSceneIndex) ? 'flex' : 'none';
+        const video = scene.querySelector('video');
+        if (index === currentSceneIndex) {
+            scene.style.display = 'flex'; // Show current scene
+            video.currentTime = 0; // Reset video time to 0
+            // video.play(); // 
+        } else {
+            scene.style.display = 'none'; // Hide other scenes
+            video.pause(); // Pause video on hidden scenes
+        }
     });
 
-    // Disable/enable buttons
+
     prevButton.disabled = (currentSceneIndex === 0);
     nextButton.disabled = (currentSceneIndex === scenes.length - 1);
 
-    // Update preview boxes
+  
     prevPreview.textContent = (currentSceneIndex > 0) ? `Scene ${currentSceneIndex}` : '';
     nextPreview.textContent = (currentSceneIndex < scenes.length - 1) ? `Scene ${currentSceneIndex + 2}` : '';
 
-    // Update preview colors
+
     prevPreview.style.backgroundColor = (currentSceneIndex > 0) ? '#ddd' : '#ccc';
     nextPreview.style.backgroundColor = (currentSceneIndex < scenes.length - 1) ? '#ddd' : '#ccc';
 }

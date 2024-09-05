@@ -29,23 +29,36 @@
 
     <div class="main">
         <div id="scene-container">
-            <div class="scene" id="scene1">Scene 1: Welcome to Scene 1</div>
-            <div class="scene" id="scene2" style="display:none;">Scene 2: The Adventure Begins</div>
-            <div class="scene" id="scene3" style="display:none;">Scene 3: The Journey Continues</div>
-            <div class="scene" id="scene4" style="display:none;">Scene 4: The Challenge</div>
-            <div class="scene" id="scene5" style="display:none;">Scene 5: The Final Frontier</div>
+            <div class="scene" id="scene1">
+                <video loop src="../Assets/ॐ Chanting.mp4" controls></video>  
+            </div>
+            <div class="scene" id="scene2" style="display:none;">
+                <video loop src="../Assets/sea.mp4" controls></video>
+            </div>
+            <div class="scene" id="scene3" style="display:none;">
+                <video loop controls src="../Assets/Meditation Bowl.mp4" ></video>
+            </div>
+            <div class="scene" id="scene4" style="display:none;">
+                <video loop src="../Assets/Jungle.mp4" controls></video>
+            </div>
+            <div class="scene" id="scene5" style="display:none;">
+                <video loop src="../Assets/Forest.mp4" controls></video>
+            </div>
         </div>
 
-        <div class="navigation">
-            <button id="prev" class="nav-button">← Previous</button>
-            <button id="next" class="nav-button">Next →</button>
+        <div class="scene-previews">
+            <div class="preview" id="prev-preview"></div>
+            <div class="navigation">
+                <button id="prev" class="nav-button">← Previous</button>
+                <button id="next" class="nav-button">Next →</button>
+            </div>
+            <div class="preview" id="next-preview"></div>
         </div>
+        <br>
+        <p style="margin-left: 5px; color: red; font-weight: 600;">---"Close Your Eyes, Relax, and Meditate"---</p>
+
     </div>
 
-    <div class="scene-previews">
-        <div class="preview" id="prev-preview"></div>
-        <div class="preview" id="next-preview"></div>
-    </div>
 
     <script src="./scene.js"></script>
 </body>

@@ -23,7 +23,6 @@ body{
     align-items: center;
     margin-bottom: 0.5%;
     background-color: rgba(0, 0, 0, 0.116);
-    border-radius: 20px;
 }
 #buttons{
     display: flex;

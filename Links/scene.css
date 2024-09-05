@@ -1,53 +1,63 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: rgb(35, 34, 83);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
 }
 
-/* css for header  */
-#header{
+body {
+    background: linear-gradient(70deg, white, rgb(220, 230, 241), whitesmoke);
+}
+
+/* CSS for header */
+#header {
     display: flex;
     justify-content: space-between;
     padding-inline: 15px;
     padding-block: 5px;
     align-items: center;
-    margin-bottom: 2%;
     background-color: rgba(0, 0, 0, 0.116);
-    border-radius: 20px;
 }
-#buttons{
+
+#buttons {
     display: flex;
-    align-items:center ;
+    align-items: center;
 }
-#logIn{
+
+#logIn {
     height: 30px;
     width: 80px;
     border-radius: 5px;
 }
-#logIn:hover{
+
+#logIn:hover {
     background-color: rgb(35, 34, 83); 
     color: white;
     transition: 0.4s;
     cursor: pointer;
 }
-#name{
+
+#name {
     font-size: larger;
     font-weight: 800;
 }
-#name:hover{
+
+#name:hover {
     color: rgb(179, 14, 14);
     transition: 0.4s;
 }
-#profileLogo{
+
+#profileLogo {
     display: none;
 }
-#firstLetter{
+
+#firstLetter {
     display: none;
 }
-#loader{
+
+#loader {
     height: 10%;
     width: 10%;
     position: absolute;
@@ -55,41 +65,11 @@
     left: 45%;
 }
 
-
-@media screen and (max-width:900px){
-    #header{
-        border-radius: 0;
-    }
-    #profileLogo{
-        display: block;
-    }
-    #logIn{
-        display: none;
-    }
-    #name{
-        display: none;
-    }
-    #firstLetter{
-        display: block;
-        font-size: larger;
-        font-weight: 800;
-        color: rgb(156, 10, 10);
-        background-color: rgba(128, 128, 128, 0.253);
-        width: 20px;
-        border-radius: 10px;
-        padding: 3px;
-    }
-    #loader{
-        height: 10%;
-        width: 25%;
-        left: 40%;
-    }
-}
-
-
+/* Adjusted margin to prevent overlap */
 .main {
-    width: 80%;
-    height: 60vh;
+    margin-top:0px; /* Adjust this if necessary */
+    width: 100%;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,6 +90,20 @@
     transition: opacity 0.5s ease-in-out;
 }
 
+/* Video settings */
+#scene1 video,
+#scene2 video,
+#scene3 video,
+#scene4 video,
+#scene5 video {
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    height: 75vh;
+    object-fit: cover; /* Ensure the video scales properly */
+}
+
+/* Navigation */
 .navigation {
     margin-top: 20px;
 }
@@ -129,18 +123,28 @@
     background-color: #333;
 }
 
+#prev {
+    width: 140px;
+}
+
+#next {
+    width: 140px;
+}
+
 .scene-previews {
     display: flex;
+    gap: 20px;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
     position: absolute;
-    top: 80%;
-    left: 45%;
+    top: 83%;
+    left: 30%;
 }
 
 .preview {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 70px;
     margin: 0 10px;
     background-color: #ccc;
     display: flex;
@@ -150,14 +154,48 @@
     font-weight: bold;
     border: 2px solid #888;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
-.preview:hover {
+/* .preview:hover {
     transform: scale(1.1);
+} */
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+    #header {
+        border-radius: 0;
+    }
+
+    #profileLogo {
+        display: block;
+    }
+
+    #logIn {
+        display: none;
+    }
+
+    #name {
+        display: none;
+    }
+
+    #firstLetter {
+        display: block;
+        font-size: larger;
+        font-weight: 800;
+        color: rgb(156, 10, 10);
+        background-color: rgba(128, 128, 128, 0.253);
+        width: 20px;
+        border-radius: 10px;
+        padding: 3px;
+    }
+
+    #loader {
+        height: 10%;
+        width: 25%;
+        left: 40%;
+    }
 }
-
-
 
 @media screen and (max-width: 600px) {
     .scene {

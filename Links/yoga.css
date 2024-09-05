@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-color: #efefef;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  
+
+}
+
+h1,h2{
+    margin-block:30px;
+    text-align: center;
+    color: #232253;
+    font-size: 40px;
+    
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+    width: 70%;
+    margin-inline:auto;
+    text-align: center;
+    font-size: 20px;
+    text-align: justify;
+
+}
+
+.philosophy ul li{
+    list-style:none;
+    text-align: justify;
+}
+.history{
+    margin-block:20px;
+    text-align: justify;
+
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.img1{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+}
+.images img{
+    height:300px;
+    width:400px;
+    border: 1px solid black;
+
+}
+
+@media screen and (max-width: 500px) {
+    .images img{
+        height:250px;
+        width:300px;
+    }
+    
+}
+
