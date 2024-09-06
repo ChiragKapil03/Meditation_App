@@ -9,7 +9,7 @@
 
 /* css for header  */
 body{
-    background: linear-gradient(70deg, white,rgb(220, 230, 241),whitesmoke);
+    background: linear-gradient(70deg, white,rgb(220, 241, 221),whitesmoke);
     /* min-height: 100vh; */
 }
 
@@ -56,9 +56,14 @@ body{
 #profileLogo{
     display: none;
 }
-
 #firstLetter{
     display: none;
+}
+#firstLetter1{
+    display: none;
+}
+#firstLetter1 h1{
+    font-size: 10px;
 }
 
 #loader{
@@ -149,14 +154,31 @@ body{
         display: none;
     }
     #firstLetter{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: larger;
         font-weight: 800;
         color: rgb(156, 10, 10);
         background-color: rgba(128, 128, 128, 0.253);
-        width: 20px;
-        border-radius: 10px;
-        padding: 3px;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;    
+    }
+    #firstLetter1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: 800;
+        color: rgb(156, 10, 10);
+        background-color: rgba(128, 128, 128, 0.253);
+        width: 30px;
+        height: 30px;
+        border-radius: 15px; 
+    }
+    #home1{
+        display: none;
     }
     #loader{
         height: 10%;

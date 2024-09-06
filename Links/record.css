@@ -7,6 +7,9 @@
     text-decoration: none;
 }
 
+body{
+    background: linear-gradient(70deg, white,rgb(251, 200, 208),whitesmoke);
+}
 /* css for header  */
 #header{
     display: flex;
@@ -61,7 +64,6 @@
 #left_container{
     width: 50%;
     height: 89vh;
-    background: linear-gradient(70deg, white,rgb(220, 230, 241),whitesmoke);
     display: flex;
     flex-direction: column;
     justify-content: center;

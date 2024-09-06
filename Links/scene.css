@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(70deg, white, rgb(220, 230, 241), whitesmoke);
+    background: linear-gradient(70deg, white, rgb(239, 219, 196), whitesmoke);
 }
 
 /* CSS for header */
@@ -39,22 +39,25 @@ body {
     cursor: pointer;
 }
 
-#name {
+#name{
     font-size: larger;
     font-weight: 800;
 }
-
-#name:hover {
+#name:hover{
     color: rgb(179, 14, 14);
     transition: 0.4s;
 }
-
-#profileLogo {
+#profileLogo{
     display: none;
 }
-
-#firstLetter {
+#firstLetter{
     display: none;
+}
+#firstLetter1{
+    display: none;
+}
+#firstLetter1 h1{
+    font-size: 10px;
 }
 
 #loader {
@@ -211,5 +214,187 @@ body {
         font-size: 12px;
         width: 80px;
         height: 80px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    #header {
+        padding: 10px;
+        /* align-items: flex-start; */
+    }
+
+    #profileLogo {
+        display: block;
+    }
+
+    #logIn {
+        display: none;
+    }
+
+    #name {
+        display: none;
+    }
+
+    #firstLetter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: 800;
+        color: rgb(156, 10, 10);
+        background-color: rgba(128, 128, 128, 0.253);
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;    
+    }
+    #firstLetter1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: 800;
+        color: rgb(156, 10, 10);
+        background-color: rgba(128, 128, 128, 0.253);
+        width: 30px;
+        height: 30px;
+        border-radius: 15px; 
+    }
+    #home1{
+        display: none;
+    }
+
+    #loader {
+        height: 10%;
+        width: 25%;
+        left: 35%;
+    }
+
+    .scene-previews {
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .scene {
+        font-size: 20px;
+        height: auto; /* Adjust height for small screens */
+    }
+
+    .nav-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .preview {
+        display: none;
+    }
+
+    #loader {
+        width: 20%;
+        left: 40%;
+    }
+
+    #next {
+        position: absolute;
+        /* bottom: 10px; */
+        top: 150px;
+        width: 100px;
+        height: 40px;
+    }
+    #prev{
+        position: absolute;
+        /* bottom: 10px; */
+        top: 118px;
+        width: 100px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #logIn {
+        width: 70px;
+        height: 25px;
+    }
+
+    #name {
+        font-size: 18px;
+    }
+
+    #firstLetter {
+        font-size: medium;
+        width: 18px;
+        padding: 2px;
+    }
+    #firstLetter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: 800;
+        color: rgb(156, 10, 10);
+        background-color: rgba(128, 128, 128, 0.253);
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;    
+    }
+    #firstLetter1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: 800;
+        color: rgb(156, 10, 10);
+        background-color: rgba(128, 128, 128, 0.253);
+        width: 30px;
+        height: 30px;
+        border-radius: 15px; 
+    }
+    #loader {
+        height: 15%;
+        width: 25%;
+        left: 35%;
+    }
+
+    .main {
+        height: auto;
+        padding: 10px;
+    }
+
+    .scene {
+        font-size: 16px;
+        height: auto;
+    }
+
+    .nav-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .scene-previews {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        bottom: 10px;
+    }
+    #next {
+        position: relative;
+        /* bottom: 10px; */
+        top: 150px;
+        width: 100px;
+        height: 40px;
+    }
+    #prev{
+        position: relative;
+        /* bottom: 10px; */
+        top: 150px;
+        width: 100px;
+        height: 40px;
+    }
+    .preview{
+        display: none;
+        /* width: 20px; */
     }
 }
