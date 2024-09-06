@@ -301,3 +301,23 @@ body {
 a {
   color: rgb(0, 140, 255);
 }
+
+
+@media screen and (max-width:600px) {
+  #mic{
+    display: none;
+  }
+  #photoAdd{
+    display: none;
+  }
+  .prompt .textarea{
+    min-width: 300px; 
+    /* height: 80px; */
+    /* width: 500px; */
+    margin-left: 230px; 
+  }
+  .prompt{
+    display: flex;
+    justify-content: center;
+  }
+}
