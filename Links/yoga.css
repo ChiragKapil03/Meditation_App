@@ -67,6 +67,8 @@ h1,h2{
         height:250px;
         width:300px;
     }
-    
+    p{
+        font-size: 12px;
+    }
 }
 
