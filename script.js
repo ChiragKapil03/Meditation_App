@@ -28,3 +28,7 @@ setInterval(() => {
     void quoteChange.offsetWidth; 
     quoteChange.classList.add('animate__animated', 'animate__zoomIn');
 }, 3000);
+
+setTimeout(() => {
+    alert("Log in or sign up to monitor your daily progress! 👉👉👉")
+}, 3000);
