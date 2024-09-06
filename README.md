@@ -24,9 +24,9 @@ Installation
 
 
 ***Clone the repository:***
-bash
-Copy code
-git clone https://github.com/ChiragKapil03/Meditation_App.git
-Open index.html in your browser to start using the app.
-Contributing
+1. Open bash
+2. Copy code git clone https://github.com/ChiragKapil03/Meditation_App.git
+3. Open index.html in your browser to start using the app.
+
+***Contributing***
 Feel free to contribute to this project by submitting issues or pull requests.
