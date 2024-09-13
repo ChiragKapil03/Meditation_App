@@ -320,4 +320,8 @@ a {
     display: flex;
     justify-content: center;
   }
+  #send{
+    left: 300px;
+    /* bottom:-100px ; */
+  }
 }
